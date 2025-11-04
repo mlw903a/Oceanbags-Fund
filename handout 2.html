@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oceanbags 500 Backpacks Handout</title>
+<style>
+  @media print {
+    @page { size: 5in 9in; margin: 0; }
+    body { margin: 0; }
+  }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #222;
+  }
+
+  .page {
+    width: 5in;
+    height: 9in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+  }
+
+  /* FRONT --------------------------------------*/
+  .front {
+    position: relative;
+    background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.5)),
+      url('backpack.jpg') center/cover no-repeat;
+    filter: brightness(1.25) contrast(1.05);
+    color: #fff;
+    text-align: center;
+    padding: 1.8in 0.6in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .front h1 {
+    font-size: 1.55rem;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  }
+
+  .front p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0.6rem 0;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.9);
+  }
+
+  .front .footer {
+    margin-top: 1.6rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  }
+
+  /* BACK ---------------------------------------*/
+  .back {
+    padding: 0.9in 0.65in;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .back h2 {
+    color: #0c4b64;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+
+  .back p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0.4rem 0;
+  }
+
+  .back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0;
+  }
+
+  .back li {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .eco {
+    color: #0c4b64;
+    font-weight: 600;
+    margin-top: 0.6rem;
+  }
+
+  .footer {
+    border-top: 1px solid #ccc;
+    margin-top: 0.8rem;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .qr {
+    width: 1in;
+    height: 1in;
+    background: url('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://oceanbags.org')
+                center/cover no-repeat;
+    border-radius: 8px;
+  }
+</style>
+</head>
+
+<body>
+  <!-- FRONT SIDE -->
+  <div class="page front">
+    <div class="content">
+      <h1>Strong enough for the road no child should have to take.</h1>
+      <p>Each $25 gift equips a child fleeing war with a durable, weather-proof backpack — a small piece of stability and dignity for the journey ahead.</p>
+      <div class="footer">
+        Oceanbags Foundation × Partners.ngo<br>
+        <em>Built to last. Made from rescued Ocean Bound Plastics.</em><br>
+        <strong>#HopeInEveryBag | Oceanbags.org</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK SIDE -->
+  <div class="page back">
+    <div>
+      <h2>500 Backpacks for Kids on the Move</h2>
+      <p>Some children are on the move — fleeing conflict, crossing borders, or living day-to-day in refugee camps.</p>
+      <p>We’re sending <strong>500 ultra-durable backpacks</strong> to these kids through our partners at <strong>Partners.ngo</strong>. Each costs <strong>$25</strong> to make and deliver — built strong enough to survive the journey and carry hope inside.</p>
+      <ul>
+        <li>💙 Sponsor one backpack — $25</li>
+        <li>📣 Share the story</li>
+        <li>🔗 Visit <strong>Oceanbags.org</strong></li>
+      </ul>
+      <p class="eco">Every pack is made from certified Ocean Bound Plastics — rescued before they could pollute our seas.</p>
+    </div>
+
+    <div class="footer">
+      <span><strong>Strong materials. Stronger futures.</strong><br>Oceanbags Foundation | @Oceanbags</span>
+      <div class="qr"></div>
+    </div>
+  </div>
+</body>
+</html>
