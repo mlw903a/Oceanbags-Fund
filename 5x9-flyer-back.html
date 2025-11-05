@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanbags Foundation - 5x9 Flyer Back</title>
+    <style>
+        @page {
+            size: 5.25in 9.25in;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 5.25in;
+            height: 9.25in;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Safe area (accounting for bleed) */
+        .safe-area {
+            position: absolute;
+            top: 0.125in;
+            left: 0.125in;
+            width: 5in;
+            height: 9in;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
+            color: white;
+            padding: 0.4in;
+            text-align: center;
+        }
+
+        .header h2 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 0.15in;
+        }
+
+        .header p {
+            font-size: 11pt;
+            line-height: 1.4;
+        }
+
+        /* Content Area */
+        .content {
+            flex-grow: 1;
+            padding: 0.4in;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1e3a5f;
+            margin-bottom: 0.15in;
+            padding-bottom: 0.08in;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .why-section {
+            margin-bottom: 0.3in;
+        }
+
+        .why-section p {
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #2c3e50;
+            margin-bottom: 0.15in;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #34495e;
+            padding-left: 0.2in;
+            margin-bottom: 0.1in;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 12pt;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Action Section */
+        .action-section {
+            background: #f8f9fa;
+            padding: 0.3in;
+            border-radius: 4px;
+            margin-top: 0.25in;
+        }
+
+        .action-section h3 {
+            font-size: 14pt;
+            color: #1e3a5f;
+            margin-bottom: 0.2in;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .donation-options {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0.2in;
+            gap: 0.15in;
+        }
+
+        .donation-tier {
+            flex: 1;
+            text-align: center;
+            background: white;
+            padding: 0.15in;
+            border-radius: 4px;
+            border: 2px solid #1e3a5f;
+        }
+
+        .donation-tier .amount {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1e3a5f;
+            display: block;
+            margin-bottom: 0.05in;
+        }
+
+        .donation-tier .description {
+            font-size: 8pt;
+            color: #34495e;
+        }
+
+        /* QR Code Section */
+        .qr-section {
+            text-align: center;
+            margin-top: 0.2in;
+            padding: 0.2in;
+            background: white;
+            border: 2px solid #ffd700;
+            border-radius: 4px;
+        }
+
+        .qr-section p {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #1e3a5f;
+            margin-bottom: 0.15in;
+        }
+
+        .qr-code-placeholder {
+            width: 1.5in;
+            height: 1.5in;
+            margin: 0 auto 0.1in;
+            border: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .qr-code-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .qr-text {
+            font-size: 9pt;
+            color: #34495e;
+            margin-top: 0.08in;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 0.2in;
+            text-align: center;
+        }
+
+        .footer-contact {
+            font-size: 9pt;
+            margin-bottom: 0.08in;
+        }
+
+        .footer-tagline {
+            font-size: 10pt;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="safe-area">
+        <!-- Header -->
+        <div class="header">
+            <h2>How You Can Help</h2>
+            <p>Every $25 provides one durable backpack for a child in crisis</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Why It Matters -->
+            <div class="why-section">
+                <div class="section-title">Why Durable Matters</div>
+                <p>For a child forced to flee home, a backpack becomes a lifeline — carrying essentials, schoolwork, and what little they have left.</p>
+                <ul class="feature-list">
+                    <li><strong>Waterproof & reinforced</strong> — built for harsh conditions</li>
+                    <li><strong>Made from Ocean Bound Plastics</strong> — turning waste into hope</li>
+                    <li><strong>Delivered through Partners.ngo</strong> — directly to refugee camps</li>
+                    <li><strong>Built to last</strong> — not cheap throwaway gear</li>
+                </ul>
+            </div>
+
+            <!-- Action Section -->
+            <div class="action-section">
+                <h3>Give Today</h3>
+
+                <div class="donation-options">
+                    <div class="donation-tier">
+                        <span class="amount">$25</span>
+                        <span class="description">One Backpack</span>
+                    </div>
+                    <div class="donation-tier">
+                        <span class="amount">$100</span>
+                        <span class="description">Four Backpacks</span>
+                    </div>
+                    <div class="donation-tier">
+                        <span class="amount">$250</span>
+                        <span class="description">Ten Backpacks</span>
+                    </div>
+                </div>
+
+                <!-- QR Code -->
+                <div class="qr-section">
+                    <p>Scan to Donate Now</p>
+                    <div class="qr-code-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 200 200">
+                            <!-- QR Code pattern for https://www.paypal.com/ncp/payment/CLFFCAHE2G288 -->
+                            <rect width="200" height="200" fill="white"/>
+                            <!-- Simplified QR representation - replace with actual QR code image -->
+                            <text x="100" y="100" text-anchor="middle" fill="#1e3a5f" font-size="12" font-weight="bold">QR CODE</text>
+                            <text x="100" y="120" text-anchor="middle" fill="#34495e" font-size="8">PayPal Donation</text>
+                        </svg>
+                    </div>
+                    <div class="qr-text">Or visit: oceanbags.org/donate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-contact">Follow @Oceanbags  •  Share the Story</div>
+            <div class="footer-tagline">Strong materials. Stronger futures.</div>
+        </div>
+    </div>
+</body>
+</html>

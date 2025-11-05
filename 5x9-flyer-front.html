@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanbags Foundation - 5x9 Flyer Front</title>
+    <style>
+        @page {
+            size: 5.25in 9.25in;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 5.25in;
+            height: 9.25in;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Safe area (accounting for bleed) */
+        .safe-area {
+            position: absolute;
+            top: 0.125in;
+            left: 0.125in;
+            width: 5in;
+            height: 9in;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
+            color: white;
+            padding: 0.6in 0.4in;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .hero h1 {
+            font-size: 32pt;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 0.25in;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 13pt;
+            font-weight: 600;
+            color: #ffd700;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 0.4in;
+            flex-grow: 1;
+            background: white;
+        }
+
+        .mission-statement {
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #2c3e50;
+            margin-bottom: 0.3in;
+            text-align: left;
+        }
+
+        .mission-statement strong {
+            color: #1e3a5f;
+            font-weight: 700;
+        }
+
+        /* Key Stats Box */
+        .stats-box {
+            background: #f8f9fa;
+            border-left: 4px solid #ffd700;
+            padding: 0.25in;
+            margin: 0.25in 0;
+        }
+
+        .stats-box h3 {
+            font-size: 12pt;
+            color: #1e3a5f;
+            margin-bottom: 0.15in;
+            font-weight: bold;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.08in 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 10pt;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #1e3a5f;
+        }
+
+        /* Impact Statement */
+        .impact {
+            background: linear-gradient(to right, #1e3a5f, #2d5a8c);
+            color: white;
+            padding: 0.25in;
+            text-align: center;
+            margin: 0.25in 0;
+            border-radius: 4px;
+        }
+
+        .impact p {
+            font-size: 11pt;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 0.25in;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-tagline {
+            font-size: 11pt;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 0.1in;
+        }
+
+        .footer-org {
+            font-size: 9pt;
+            opacity: 0.9;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="safe-area">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Strong enough for the road no child should have to take.</h1>
+            <div class="subtitle">Delivering 500 durable backpacks to children displaced by war</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="mission-statement">
+                Some children are fleeing war — traveling with only what they can carry.
+                <br><br>
+                <strong>Oceanbags Foundation</strong> is delivering <strong>500 ultra-durable backpacks</strong> through <strong>Partners.ngo</strong>, who work directly in refugee camps and border areas.
+                <br><br>
+                Each backpack costs <strong>$25</strong> to make and deliver. Built to last — waterproof, reinforced, dependable — they give a child something they can trust when almost everything else is uncertain.
+            </div>
+
+            <!-- Stats Box -->
+            <div class="stats-box">
+                <h3>Campaign At-A-Glance</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Goal:</span>
+                    <span class="stat-value">500 backpacks</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Cost per backpack:</span>
+                    <span class="stat-value">$25</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Partner:</span>
+                    <span class="stat-value">Partners.ngo</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Material:</span>
+                    <span class="stat-value">Ocean Bound Plastics</span>
+                </div>
+            </div>
+
+            <!-- Impact Statement -->
+            <div class="impact">
+                <p><strong>500 children carrying strength, not just belongings.</strong></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-tagline">Strong materials. Stronger futures.</div>
+            <div class="footer-org">Oceanbags Foundation</div>
+        </div>
+    </div>
+</body>
+</html>
